@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прямоугольники с использованием JavaScript</title>
+</head>
+<body>
+
+    <div id="outerRectangle"></div>
+
+    <script>
+        const outerRectangle = document.getElementById("outerRectangle");
+        outerRectangle.style.width = "400px";
+        outerRectangle.style.height = "300px";  
+        outerRectangle.style.position = "relative";
+        outerRectangle.style.margin = "20px auto";
+        outerRectangle.style.border = "5px solid black  ";
+
+        const innerRectangle1 = document.createElement("div");
+        innerRectangle1.style.width = "200px";
+        innerRectangle1.style.height = "100px";
+        innerRectangle1.style.position = "absolute";
+        innerRectangle1.style.top = "40px";
+        innerRectangle1.style.right = "100px";
+        innerRectangle1.style.border = "5px solid red   ";
+
+        const innerRectangle2 = document.createElement("div");
+        innerRectangle2.style.width = "200px";
+        innerRectangle2.style.height = "100px";
+        innerRectangle2.style.position = "absolute";
+        innerRectangle2.style.top = "150px";
+        innerRectangle2.style.right = "100px";
+        innerRectangle2.style.border = "5px solid blue";
+
+        outerRectangle.appendChild(innerRectangle1);
+        outerRectangle.appendChild(innerRectangle2);
+    </script>
+
+</body>
+</html>
